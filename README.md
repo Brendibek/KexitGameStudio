@@ -1,2 +1,2 @@
 # PassGen
-[KexitGameStudio Website => ](https://KexitGameStudio.github.io/)
+[KexitGameStudio Website => ](https://brendibek.github.io/KexitGameStudio/)
