@@ -1,2 +1,2 @@
 # PassGen
-[Password Generator](https://KexitGameStudio.github.io/)
+[KexitGameStudio Website => ](https://KexitGameStudio.github.io/)
