@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор зарплаты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Калькулятор зарплаты</h1>
+
+    <div>
+        <label for="bruttoSalary">Зарплата брутто:</label>
+        <input type="number" id="bruttoSalary" placeholder="Введите сумму брутто">
+        <button onclick="calculateNetSalary()">Рассчитать</button>
+    </div>
+
+    <div class="result-section">
+        <div class="result-column">
+            <h3>От 0 до 700 евро</h3>
+            <p>Часть зарплаты брутто: <span id="part0to700"></span></p>
+            <p>Часть зарплаты нетто: <span id="netPart0to700"></span></p>
+            <p>Налог с работника: <span id="taxPart0to700"></span></p>
+            <p>Налог на доход (0%): <span id="incomeTaxPart0to700"></span></p>
+            <p>Доп. налог (15%): <span id="additionalTaxPart0to700"></span></p>
+            <p>Пенсионный фонд (5.5%): <span id="pensionFundPart0to700"></span></p>
+            <p>Страховка от безработицы (0.5%): <span id="unemploymentInsurancePart0to700"></span></p>
+            <p>Пошлина в торговую палату (0.27%): <span id="chamberOfCommercePart0to700"></span></p>
+            <p>Пошлина в фонд труда (0.2%): <span id="laborFundPart0to700"></span></p>
+            <p>Профсоюз (0.2%): <span id="unionPart0to700"></span></p>
+            <p>Налог с работодателя: <span id="employerTaxPart0to700"></span></p>
+        </div>
+
+        <div class="result-column">
+            <h3>От 700 до 1000 евро</h3>
+            <p>Часть зарплаты брутто: <span id="part700to1000"></span></p>
+            <p>Часть зарплаты нетто: <span id="netPart700to1000"></span></p>
+            <p>Налог с работника: <span id="taxPart700to1000"></span></p>
+            <p>Налог на доход (9%): <span id="incomeTaxPart700to1000"></span></p>
+            <p>Доп. налог (15%): <span id="additionalTaxPart700to1000"></span></p>
+            <p>Пенсионный фонд (5.5%): <span id="pensionFundPart700to1000"></span></p>
+            <p>Страховка от безработицы (0.5%): <span id="unemploymentInsurancePart700to1000"></span></p>
+            <p>Пошлина в торговую палату (0.27%): <span id="chamberOfCommercePart700to1000"></span></p>
+            <p>Пошлина в фонд труда (0.2%): <span id="laborFundPart700to1000"></span></p>
+            <p>Профсоюз (0.2%): <span id="unionPart700to1000"></span></p>
+            <p>Налог с работодателя: <span id="employerTaxPart700to1000"></span></p>
+        </div>
+
+        <div class="result-column">
+            <h3>От 1000 и выше евро</h3>
+            <p>Часть зарплаты брутто: <span id="part1000plus"></span></p>
+            <p>Часть зарплаты нетто: <span id="netPart1000plus"></span></p>
+            <p>Налог с работника: <span id="taxPart1000plus"></span></p>
+            <p>Налог на доход (15%): <span id="incomeTaxPart1000plus"></span></p>
+            <p>Доп. налог (15%): <span id="additionalTaxPart1000plus"></span></p>
+            <p>Пенсионный фонд (5.5%): <span id="pensionFundPart1000plus"></span></p>
+            <p>Страховка от безработицы (0.5%): <span id="unemploymentInsurancePart1000plus"></span></p>
+            <p>Пошлина в торговую палату (0.27%): <span id="chamberOfCommercePart1000plus"></span></p>
+            <p>Пошлина в фонд труда (0.2%): <span id="laborFundPart1000plus"></span></p>
+            <p>Профсоюз (0.2%): <span id="unionPart1000plus"></span></p>
+            <p>Налог с работодателя: <span id="employerTaxPart1000plus"></span></p>
+        </div>
+
+        <div class="result-column">
+			<h3>Общий</h3>
+			<p>Зарплата нетто: <span id="netSalary"></span></p>
+			<p>Общий налог с работника: <span id="taxAmount"></span> <span id="taxPercentage"></span></p>
+			<p>Общий налог с работодателя: <span id="totalEmployerTax"></span></p>
+			<p>Общий налог (работник + работодатель): <span id="totalCombinedTax"></span> <span id="directorTaxPercentage"></span></p>
+		</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
